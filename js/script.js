@@ -29,7 +29,7 @@ while (i < shoppingList.length) {
 
     // aggiungo eventListner a li
     liElem.addEventListener("click", function () {
-        liElem.classList.toggle("done")
+        liElem.classList.toggle("done");
     });
 
     // inserisco li dentro ul
@@ -56,7 +56,7 @@ addButtonElem.addEventListener("click", function () {
 
         // aggiungo eventListner a li
         liElem.addEventListener("click", function () {
-            liElem.classList.toggle("done")
+            liElem.classList.toggle("done");
         });
 
         // // inserisco li dentro ul
