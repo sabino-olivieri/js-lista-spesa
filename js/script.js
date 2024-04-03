@@ -25,10 +25,10 @@ while (i < shoppingList.length) {
     console.log(liElem);
 
     // aggiungo a li il contenuto dell'array 
-    liElem.innerHTML = shoppingList[i]; 
+    liElem.innerHTML = shoppingList[i];
 
     // aggiungo eventListner a li
-    liElem.addEventListener("click", function() {
+    liElem.addEventListener("click", function () {
         liElem.classList.toggle("done")
     });
 
@@ -42,28 +42,32 @@ while (i < shoppingList.length) {
 // aggiungo eventListner al button aggiungi
 addButtonElem.addEventListener("click", function () {
 
-    // creo elemento li
-    const liElem = document.createElement("li");
+    // controllo che input non sia vuoto
+    if (inputElem.value !== "") {
 
-    // inserisco dento li il contenuto dell'input
-    liElem.innerHTML = inputElem.value; 
+        // creo elemento li
+        const liElem = document.createElement("li");
 
-    // azzero contenuto di input
-    inputElem.value = "";
+        // inserisco dento li il contenuto dell'input
+        liElem.innerHTML = inputElem.value;
+
+        // azzero contenuto di input
+        inputElem.value = "";
 
         // aggiungo eventListner a li
-    liElem.addEventListener("click", function() {
-        liElem.classList.toggle("done")
-    });
+        liElem.addEventListener("click", function () {
+            liElem.classList.toggle("done")
+        });
 
-    // // inserisco li dentro ul
-    listElem.append(liElem);
+        // // inserisco li dentro ul
+        listElem.append(liElem);
+    }
 });
 
 // aggiungo eventListner al button aggiungi
-deleteButtonElem.addEventListener("click", function() {
+deleteButtonElem.addEventListener("click", function () {
 
     // azzero ul
     listElem.innerHTML = "";
-    
+
 });
