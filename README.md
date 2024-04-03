@@ -6,7 +6,7 @@ Rifacciamo l’esercizio visto insieme, ma questa volta con il ciclo while al po
 
 ## Svolgimento
 
-- [ ] creo array shoppingList con all'interno la lista
-- [ ] creo ciclo while da 0 a shoppingList.length
-- [ ] all'interno del ciclo creo elementi li e aggiungo contenuto 
-- [ ] inserisco elementi nel DOM
+- [x] creo array shoppingList con all'interno la lista
+- [x] creo ciclo while da 0 a shoppingList.length
+- [x] all'interno del ciclo creo elementi li e aggiungo contenuto 
+- [x] inserisco elementi nel DOM
